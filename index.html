@@ -1,0 +1,62 @@
+
+<html lang='en'>
+	<head>
+		<title>Tring</title>
+		<meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+		<link rel='stylesheet' type='text/css' href='index.css'>
+	</head>
+	<body>
+		<div id='main-container'>
+			<h2 id='clock'></h2>
+		</div>
+
+		<div id='alarm-container'>
+			<h3>Set Alarm Time</h3>
+				<label>
+					<div>
+					<select id='alarmhrs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmmins' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmsecs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+						<select id="ampm">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+					</div>
+				</label>
+				</div>
+		</div>
+		
+        <div id='buttonHolder'>
+            <label class="tones-head">Choose a tone</label>
+            <select name="tones" id="tones" onchange="fun()">
+                <option value="Clock" id="song1">Clock</option>
+                <option value="Duck" id="song2">Duck</option>
+                <option value="Alarm" id="song3">Alarm</option>
+                <option value="Bell" id="song4">Bell</option>
+                <option value="Laser" id="song5">Laser</option>
+                <option value="Drum" id="song6">Drum</option>
+            </select>
+            <div>
+				<button  id='setButton' onClick='alarmSet()'>Set Alarm</button>
+			</div>
+
+			<div>
+				<button  id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='index.js'></script>
+	</body>
+</html>
